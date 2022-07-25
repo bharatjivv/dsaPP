@@ -995,6 +995,8 @@ int main(){
 }
 */
 
+
+/*
 int main(){
     int n;
     cout << "Enter the number you wanna check prime or not : ";
@@ -1018,4 +1020,40 @@ int main(){
         cout << "Not a Prime Nos";
     }
     
+}
+*/
+
+
+int main(){
+    // int arr[10] = {1};
+    // for (int i = 0; i < 10; i++){
+    //     cout << "Value at " << i+1 << " is : " << arr[i] << endl;
+    // }
+    
+
+    // Initializing whole array with a single nos;
+
+    // int n;
+    // cout << "Enter the number you want to initialize whole array with : ";
+    // cin >> n;
+
+    // int arr[10];
+    // for(int i = 0; i < 10; i++){
+    //     arr[i] = n;
+    // }
+
+    // for (int i = 0; i < 10; i++){
+    //     cout << "Value at " << i+1 << " is : " << arr[i] << endl;
+    // }
+
+
+    int array[100];
+
+    fill_n(array, 50, 66);
+
+    for(int i = 0; i<100; i++){
+        cout << "Value at index " << i << " is : " << array[i] << endl;
+    }
+
+
 }

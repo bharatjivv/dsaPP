@@ -21,7 +21,8 @@ int binarySearch(int arr[], int size, int key){
             // Jab left part me jana ho to end = mid - 1 kardo 
             end = mid - 1;
         }
-        mid = (start + end)/2;
+        mid = start + (end-start)/2;
+        // mid = (start + end)/2;
     }
 
     return -1;
