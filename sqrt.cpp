@@ -1,14 +1,13 @@
 #include <iostream>
 using namespace std;
 
-long long int sqrtInteger(int n){
+long long int sqrtInt(int n){
     int s = 0;
     int e = n;
     long long int mid = s + (e-s)/2;
-    
-    long long int ans = -1;
 
-    while(s<=e){
+    long long int ans = -1;
+    while(s<=e) {
         long long int square = mid*mid;
 
         if(square == n)
@@ -26,14 +25,30 @@ long long int sqrtInteger(int n){
     return ans;
 }
 
-double morePrecision(int n, int precision, int tempSol){};
+
+double morePrecision(int n, int precision, int tempSol){
+    double factor = 1;
+    double ans = tempSol;
+    for(int i = 0; i < precision; i++){
+        // 0.1
+        // 0.01
+        // 0.001
+        
+        factor = factor/10;
+        for(double j = ans; j*j < n; j = j+factor ){
+            ans = j;
+        }
+    }
+    return ans;
+}
 
 int main(){
-    int n; 
+    int n;
     cout << "Enter the number : ";
     cin >> n;
 
-    int tempSol = sqrtInteger(n);
+    int tempSol = sqrtInt(n);
 
-    
+    cout << "Answer is : " << morePrecision(n, 3, tempSol);
+
 }

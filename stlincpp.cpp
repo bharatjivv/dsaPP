@@ -1,5 +1,5 @@
 // STL in C++
-
+// Everything about arrays
 #include <iostream>
 #include <array>
 using namespace std;
@@ -17,6 +17,14 @@ int main(){
 
     cout << "Element at 2nd index is " << stlarrey.at(2) << endl;
     cout << "Array is empty or not : " << stlarrey.empty() << endl;
+
+
+    cout << "First element : " << stlarrey.front() << endl;
+    cout << "Last element : " << stlarrey.back() << endl;
+
+
+
+    
 
 }
 // Binary search ka code pura khud likhe
