@@ -27,10 +27,8 @@ int main(){
     printArray(even, 8);
 
 
-    cout << endl << endl;
-
-    printArray(odd, 5);
-    cout << endl;
-    swapAlternate(odd, 5);
-    printArray(odd, 5);
+    // printArray(odd, 5);
+    // cout << endl;
+    // swapAlternate(odd, 5);
+    // printArray(odd, 5);
 }
